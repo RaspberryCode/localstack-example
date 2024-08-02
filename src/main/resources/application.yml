@@ -1,0 +1,15 @@
+app:
+  queues:
+    example-queue: example-queue
+
+spring:
+  application.name: localstack-example
+  cloud:
+    aws:
+      credentials:
+        access-key: test
+        secret-key: test
+      sqs:
+        endpoint: http://localhost:4566
+      region:
+        static: us-east-1
